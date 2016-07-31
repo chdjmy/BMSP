@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_bottom_height"
+        android:orientation="vertical" >
+
+        <!-- 选择桥梁 -->
+        <LinearLayout
+            android:id="@+id/layout_bridge_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/view_line"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="请选择桥梁"
+                android:textSize="@dimen/label_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/buttonScan"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="扫描条码" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight="5" >
+
+                        <EditText
+                            android:id="@+id/editSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:hint="@string/bridge_search_hint" >
+                        </EditText>
+
+                        <requestFocus />
+
+                        <ImageView
+                            android:id="@+id/imageClear"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/buttonSearch"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="搜索" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listViewBridgeInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 填写计划单 -->
+        <LinearLayout
+            android:id="@+id/layout_plan_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/view_line"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="填写计划单"
+                    android:textSize="@dimen/label_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#ffffff" >
+
+                    <ListView
+                        android:id="@+id/list_plan_add"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                    
+                    <ListView
+                        android:id="@+id/list_material"
+                        android:layout_gravity="bottom"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/buttonBack"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="重选桥梁" />
+
+                <Button
+                    android:id="@+id/buttonSave"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="保存计划" />
+            </LinearLayout>
+        </LinearLayout>
+       <!-- 计划列表 --> 
+       <LinearLayout
+            android:id="@+id/layout_plan_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/view_line"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="维修计划列表"
+                    android:textSize="@dimen/label_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#ffffff" >
+
+                    <ListView
+                        android:id="@+id/list_plan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout> 
+        
+        
+    <!-- 最外层的 -->    
+    </LinearLayout>
+    <include layout="@layout/app_bottom" />
+
+</RelativeLayout>

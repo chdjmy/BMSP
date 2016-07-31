@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_bottom_height"
+        android:layout_marginTop="30dp" >
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="@string/init_bridge_info"
+                android:textSize="@dimen/label_text_size" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+			<!-- 
+             <ProgressBar
+		        android:id="@+id/progressBarBridgeInfo"
+		        style="?android:attr/progressBarStyleHorizontal"
+		        android:layout_width="0dp"
+		        android:layout_height="30dp"
+		        android:layout_weight="2"
+		        android:paddingLeft="30dp"
+		        android:paddingRight="250dp"
+		         />  -->
+        </TableRow>
+        
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="桥梁经常性检查"
+                android:textSize="@dimen/label_text_size" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+
+            <!--  
+             <ProgressBar
+		        android:id="@+id/progressBarBridgeUsualExam"
+		        style="?android:attr/progressBarStyleHorizontal"
+		        android:layout_width="0dp"
+		        android:layout_height="30dp"
+		        android:layout_weight="1"
+		        android:paddingLeft="30dp"
+		        android:paddingRight="250dp"
+		         />-->
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="涵洞基本信息"
+                android:textSize="@dimen/label_text_size" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+ <!--  
+             <ProgressBar
+		        android:id="@+id/progressBarCulvertInfo"
+		        style="?android:attr/progressBarStyleHorizontal"
+		        android:layout_width="0dp"
+		        android:layout_height="30dp"
+		        android:layout_weight="1"
+		        android:paddingLeft="30dp"
+		        android:paddingRight="250dp"
+		         />-->
+        </TableRow>
+
+        <TableRow android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="涵洞经常性检查"
+                android:textSize="@dimen/label_text_size" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.8"
+                android:paddingRight="200dp"
+                android:src="@drawable/download" />
+ <!-- 
+             <ProgressBar
+		        android:id="@+id/progressBarCulvertUsualExam"
+		        style="?android:attr/progressBarStyleHorizontal"
+		        android:layout_width="0dp"
+		        android:layout_height="30dp"
+		        android:layout_weight="1"
+		        android:paddingLeft="30dp"
+		        android:paddingRight="250dp"
+		         /> -->
+        </TableRow>
+    
+        
+
+        <TableRow
+            android:layout_margin="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp" >
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle" 
+                android:id="@+id/init_btn_back"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_blue"
+                android:textSize="@dimen/label_text_size"
+                android:textColor="@color/btn_text_color"
+                android:text="@string/init_btn_back" />
+            
+            <Button
+                style="?android:attr/buttonBarButtonStyle" 
+                android:id="@+id/init_btn_init"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/label_text_size"
+                android:textColor="@color/btn_text_color"
+                android:background="@drawable/btn_blue"
+                android:layout_marginLeft="10dp"
+                android:text="@string/init_btn_init" />
+        </TableRow>
+    </TableLayout>
+    <include layout="@layout/app_bottom" />
+
+   
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+		<color name="light_blue">#37b76a</color>
+		<color name="down_blue">#4169F1</color>
+		<color name="btn_text_color">#FFFFFF</color>
+		<color name="view_line">#B8B8B8</color>
+		<!-- tab -->
+		<color name="title">#ff333333</color>
+    	<!--  <color name="frame">#46A3FF</color>-->
+    	<color name="frame">#61a716</color>
+    	<color name="divider">#e6e6e6</color>
+    	
+    	<color name="result_view">#b0000000</color>
+    	<color name="viewfinder_mask">#60000000</color>
+    	<color name="possible_result_points">#c0ffff00</color>
+</resources>

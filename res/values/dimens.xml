@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <dimen name="app_bottom_height">30dp</dimen>
+     <dimen name="app_bottom_textsize">15dp</dimen>
+     <dimen name="body_padding_left">0dp</dimen>
+     <dimen name="body_padding_right">0dp</dimen>
+     <dimen name="list_text_size">20sp</dimen>
+     <dimen name="label_text_size">20sp</dimen>
+     <dimen name="list_item_height">30dp</dimen>
+     <dimen name="text_view_padding">20dp</dimen>
+     <dimen name="view_line_width">2dp</dimen>
+     <dimen name="login_image_margin">60dp</dimen>
+     <dimen name="init_icon_height">30dp</dimen>
+</resources>
